@@ -1,0 +1,18 @@
+{
+  "name": "flova",
+  "version": "0.0.5",
+  "author": {
+    "name": "Flova",
+    "url": "https://www.flova.ai"
+  },
+  "homepage": "https://www.flova.ai",
+  "keywords": [
+    "flova",
+    "video",
+    "mcp",
+    "ai-video"
+  ],
+  "description": "Generate media and create, revise, track, and deliver Flova AI video projects from Claude Code.",
+  "icon": "./assets/logo.png",
+  "privacyPolicyUrl": "https://www.flova.ai/en/privacy-policy/"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "flova",
+  "owner": {
+    "name": "Flova"
+  },
+  "metadata": {
+    "description": "Flova plugins and Skills for AI media creation."
+  },
+  "plugins": [
+    {
+      "name": "flova",
+      "source": "./plugins/claude/flova",
+      "description": "Generate media and create, revise, track, and deliver Flova AI video projects from Claude Code.",
+      "category": "productivity"
+    }
+  ]
+}

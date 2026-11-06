@@ -1,0 +1,26 @@
+{
+  "name": "flova",
+  "owner": {
+    "name": "Flova"
+  },
+  "metadata": {
+    "description": "Flova plugins and Skills for AI media creation."
+  },
+  "plugins": [
+    {
+      "name": "flova",
+      "source": {
+        "source": "local",
+        "path": "./plugins/codex/flova"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Creativity"
+    }
+  ],
+  "interface": {
+    "displayName": "Flova"
+  }
+}
