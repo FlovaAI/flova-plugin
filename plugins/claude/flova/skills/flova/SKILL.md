@@ -32,6 +32,14 @@ Prefer quick generation. Choose the project workflow when the user explicitly wa
 
 Both modes support one-pass delivery or staged review. Follow the user's requested checkpoints; generating a reference image for approval before a video can stay in quick generation.
 
+## Continue Creating from Inspiration Results
+
+An inspiration's deliverables can become the starting point for another work: a Blender previs can become a finished video, a character pack can support a short film, or a selected research direction can become an ad.
+
+Once the user has confirmed the result and a natural next step is clear, suggest what they could create next and which existing materials would carry over. For finished deliverables, let follow-up needs guide the suggestion. If the intended use is unclear, ask what the user wants to make with the result.
+
+Choose the creation mode around that goal: quick generation for standalone media, a project when the user wants to continue in a Flova project or delegate coordinated production, and the existing project when continuing that work. Carry relevant assets, their reference roles, and confirmed creative decisions into the next request so the user can continue from the current progress.
+
 ## Shared Creative Requirements
 
 - Reuse the user's confirmed models, materials, and creative choices. Clarify only missing decisions that affect the result, such as the goal, audience, duration, aspect ratio, language, visual direction, brand constraints, and review expectations.
