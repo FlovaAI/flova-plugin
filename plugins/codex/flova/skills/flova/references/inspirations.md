@@ -23,3 +23,10 @@ For example, finding no installed advertising plugin does not establish that an 
 ## 3. Check Delivery
 
 Compare results against the inspiration's requested deliverables and the user's current scope. Distinguish completed work, missing inputs, and agreed substitutions. If required steps remain undone, do not describe a fallback or partial analysis as completion of the full workflow.
+
+## 4. Continue from the Result
+
+Use the main Skill's continuation guidance when a next creative step is useful. For example:
+
+- **Blender previs:** After the user confirms the shots and pacing, offer to create a Flova project for the finished video, carrying over the shot list, individual shot composition references, and available character materials.
+- **Character design:** After the character pack is confirmed, ask how the user would like to use it, such as a performance test, a short film, or an existing work. Let that goal guide quick generation or project work, reusing the confirmed appearance, voice, and characterization as relevant.
