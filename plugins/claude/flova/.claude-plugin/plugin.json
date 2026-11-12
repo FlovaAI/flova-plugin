@@ -1,18 +1,24 @@
 {
   "name": "flova",
-  "version": "0.0.5",
+  "displayName": "Flova",
+  "version": "0.0.6",
   "author": {
     "name": "Flova",
+    "email": "support@flova.ai",
     "url": "https://www.flova.ai"
   },
   "homepage": "https://www.flova.ai",
+  "repository": "https://github.com/FlovaAI/flova-plugin",
+  "documentationUrl": "https://github.com/FlovaAI/flova-plugin/blob/main/plugins/claude/flova/README.md",
+  "supportUrl": "https://github.com/FlovaAI/flova-plugin/issues",
   "keywords": [
     "flova",
     "video",
     "mcp",
     "ai-video"
   ],
-  "description": "Generate media and create, revise, track, and deliver Flova AI video projects from Claude Code.",
+  "description": "Generate images, video, audio, and music; create, revise, track, and deliver Flova video projects.",
   "icon": "./assets/logo.png",
-  "privacyPolicyUrl": "https://www.flova.ai/en/privacy-policy/"
+  "privacyPolicyUrl": "https://www.flova.ai/en/privacy-policy/",
+  "termsOfServiceUrl": "https://www.flova.ai/en/terms-of-service/"
 }

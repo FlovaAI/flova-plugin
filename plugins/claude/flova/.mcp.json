@@ -5,7 +5,7 @@
       "url": "https://service.flova.ai/api/mcp/",
       "headers": {
         "X-Plugin-Agent": "claude",
-        "X-Plugin-Version": "0.0.5"
+        "X-Plugin-Version": "0.0.6"
       }
     }
   }

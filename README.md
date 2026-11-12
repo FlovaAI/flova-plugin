@@ -3,7 +3,8 @@
 Flova plugins for Codex and Claude Code, with MCP connection settings and reusable Skills for generating images, video, audio, and music, as well as creating, revising, previewing, and delivering video projects.
 
 - Plugin and MCP server name: `flova`
-- Version: `0.0.5`
+- Claude package version: `0.0.6`
+- Codex package version: `0.0.5`
 - Environment: production
 - Repository: [FlovaAI/flova-plugin](https://github.com/FlovaAI/flova-plugin)
 - MCP endpoint: `https://service.flova.ai/api/mcp/`
@@ -54,25 +55,27 @@ plugins/
     .codex-plugin/plugin.json          # Codex compatibility manifest
     .mcp.json                         # Codex compatibility MCP configuration
     assets/logo.png
-    skills/                           # Shared Skills included in the Codex package
+    skills/                           # Skills included in the Codex package
       flova/
       flova-debrief/
   claude/flova/
     .claude-plugin/plugin.json         # Claude Code manifest
     .mcp.json                         # Claude Code MCP configuration
     assets/logo.png
-    skills/                           # Identical Skills included in the Claude package
+    skills/                           # Claude-specific Skills and bundled references
 ```
 
 Both clients connect to the production MCP service. The `X-Plugin-Agent` header identifies the client as `codex` or `claude`. Claude uses the `http` transport configuration; Codex retains its existing `streamable-http` configuration.
 
-## Shared Skills
+## Maintaining the Skills
 
-Keep the Skill instructions, reference documents, and assets in `plugins/codex/flova/skills/` and `plugins/claude/flova/skills/` identical when updating them. Keep Codex-specific metadata only in the Codex package. This repository does not require maintenance scripts for installation or runtime.
+Both packages use the same Flova MCP contracts, but their host instructions are maintained separately. Review common API changes in both packages; do not overwrite Claude-specific content boundaries when copying files from Codex. This repository does not require maintenance scripts for installation or runtime.
 
-Both packages include the same Skill instructions, reference documents, and assets. Files are copied into each package so all installed content stays within that plugin's root directory. Only the Codex package includes `agents/openai.yaml` for Codex-specific presentation and invocation metadata.
+Each package contains its own Skill instructions, reference documents, and assets so all installed content stays within that plugin's root directory. The Claude package treats online inspirations and creative Skill documents as reference data, not instructions for Claude to execute. New host workflows must be bundled in a plugin release. Only the Codex package includes `agents/openai.yaml` for Codex-specific presentation and invocation metadata.
 
-`flova` handles direct media generation and project workflows; `flova-debrief` supports creative performance reviews. Preview cards are used only in Codex when the service exposes the relevant tools. Claude follows the service's presentation instructions using supported media or returned links.
+`flova` handles direct media generation and project workflows; `flova-debrief` supports creative performance reviews. Preview cards are used only in Codex when the service exposes the relevant tools. Claude presents results using supported media or returned links.
+
+For Claude release preparation, see the [submission checklist](docs/claude-submission.md), [review cases](plugins/claude/flova/REVIEW_CASES.md), and [release notes](plugins/claude/flova/CHANGELOG.md). Preparing repository files does not mean the plugin or its remote connector has been approved for Anthropic's directory.
 
 ## Service and Authorization
 

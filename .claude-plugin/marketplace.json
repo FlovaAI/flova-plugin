@@ -10,7 +10,7 @@
     {
       "name": "flova",
       "source": "./plugins/claude/flova",
-      "description": "Generate media and create, revise, track, and deliver Flova AI video projects from Claude Code.",
+      "description": "Generate images, video, audio, and music; create, revise, track, and deliver Flova video projects.",
       "category": "productivity"
     }
   ]
